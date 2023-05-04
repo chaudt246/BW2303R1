@@ -1,0 +1,82 @@
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Tahome, sans-serif;
+}
+.container {
+    width: 100%;
+    padding-bottom: 20px;
+}
+.info {
+    display: block;
+    clear:both;
+    margin: 0 0 5px 0;
+    padding: 0 1% 0 1%;
+    border-bottom: 1px dotted #ccc;
+    letter-spacing: .01em;
+}
+table th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+main {
+    margin: 0 0 10px 0;
+    padding: 0 1% 1.1em 1%;
+    letter-spacing: .01em;
+    line-height: 1.5em;
+}
+.select-age, .select-income {
+    width: 70%;
+    font-size: 18px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Tahome, sans-serif;
+}
+#gender-other {
+    margin-left: 1.5rem;
+}
+#dollar-textbox-01 {
+    width: 30%;
+    padding: 0px 150px 0px 20px;
+    border: 1px solid black;
+}
+#dollar-textbox-02 {
+    width: 30%;
+    padding: 0px 10px 0px 20px;
+    border: 1px solid black;
+}
+#dollar-text {
+    width: 30%;
+    padding: 0px 100px 0px 20px;
+}
+#cent-text {
+    width: 30%;
+    padding: 0px 00px 0px 0px;
+}
+.payment {
+    width: 30%;
+    border: none;
+}
+.payment th, td{
+    margin: 0 0 5px 0;
+    padding: 0 0 0 0;
+}
+#payment-textbox-01, #payment-textbox-02 {
+    border:1px solid black;
+    border-collapse: collapse;
+}
+.payment-cent {
+    width: 5px;
+}
+.agreement {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+.agreement-header {
+    background-color: #dddddd;
+    font-weight: lighter;
+}
+.agreement tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+td:nth-child(1) {
+    text-align: left;
+}
