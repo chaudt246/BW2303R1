@@ -1,0 +1,73 @@
+@media only screen and (max-width: 768px) {
+    .navbar-brand{
+        padding-left: 1rem;
+    }
+
+    .section-1 .row .col-md-6 .panel{
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+
+    .section-1 cover{
+        background-position: -25vmin -10vmin;
+    }
+
+    .section-1 .leg-image{
+        text-align: center;
+    }
+
+    .numbers .rect{
+        width: 10rem;
+        height: 8rem;
+    }
+
+    .numbers .rect h1{
+        font-size: 2rem;
+    }
+
+    .section-2 .cover .content{
+        padding: 2rem 0;
+    }
+
+    .section-3{
+        height: inherit;
+        padding: 10vmin !important;
+    }
+
+    .section-3 .row h1{
+        padding: 10vmin !important;
+    }
+
+    .section-3 .platform .col-md-6{
+        text-align: center !important;
+    }
+
+    .section-3 .desktop i, .section-3 .mobile i{
+        font-size: 8vmin;
+    }
+
+    .section-3 .desktop h3, .section-3 .mobile h3{
+        font-size: 4vmin !important;
+    }
+
+    .section-3 .desktop p, .section-3 .mobile p{
+        font-size: 2vmin !important;
+    }
+
+    .carousel-tem .card{
+        margin: 0 0 !important;
+    }
+
+    .section-4 .carousel-item{
+        padding-left: 0 !important;
+    }
+
+    .section-4 .card{
+        width: 20em !important;
+    }
+
+    footer .row .col-md-2{
+        margin-top: 8vmin;
+    }
+}
