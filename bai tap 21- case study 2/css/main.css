@@ -101,6 +101,21 @@ h1 {
   transition: background-color 0.3s ease;
 }
 
+.job-search-btn {
+  background-color: #00b14f;
+  color: white;
+  margin: 0;
+}
+
+.job-search-btn:hover {
+  color: white;
+  background-color: #4b4b4b;
+}
+
+.job-search-icon {
+  color:#4b4b4b;
+}
+
 .navbar .create-account a {
   margin-right: 0;
   color: white !important;
@@ -205,6 +220,7 @@ ul.list-in-text li:before {
   background-color: #f1f7eb;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   position: relative;
   padding: 120px 0px 50px;
 }
@@ -215,7 +231,7 @@ ul.list-in-text li:before {
 
 .intro .intro-text .form {
   background-color: white;
-  padding: 15px;
+  padding: 0px;
   border-radius: 12px;
 }
 
@@ -362,17 +378,17 @@ ul.list-in-text li:before {
   margin-bottom: 100px;
 }
 
-.job-offers .offer-wrapper .offert {
+.job-offers .offer-wrapper .offer {
   border: 1px solid #e7e7e7;
   border-radius: 30px;
   padding: 40px;
 }
 
-.job-offers .offer-wrapper .offert .offer-description {
+.job-offers .offer-wrapper .offer .offer-description {
   margin-bottom: 30px;
 }
 
-.job-offers .offer-wrapper .offert .offer-description .company-logo {
+.job-offers .offer-wrapper .offer .offer-description .company-logo {
   text-align: center;
   min-width: 50px;
   max-width: 50px;
@@ -383,18 +399,18 @@ ul.list-in-text li:before {
   margin-bottom: 20px;
 }
 
-.job-offers .offer-wrapper .offert .offer-description .company-logo img {
+.job-offers .offer-wrapper .offer .offer-description .company-logo img {
   height: 80%;
   width: auto;
 }
 
-.job-offers .offer-wrapper .offert .offer-description .company-name {
+.job-offers .offer-wrapper .offer .offer-description .company-name {
   font-size: 1.4em;
   color: #4b4b4b;
   font-weight: 900;
 }
 
-.job-offers .offer-wrapper .offert .offer-meta {
+.job-offers .offer-wrapper .offer .offer-meta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,7 +421,7 @@ ul.list-in-text li:before {
   border-top: 1px solid #e7e7e7;
 }
 
-.job-offers .offer-wrapper .offert .offer-meta .city {
+.job-offers .offer-wrapper .offer .offer-meta .city {
   color: #4b4b4b;
   font-weight: 900;
 }
@@ -495,6 +511,16 @@ ul.list-in-text li:before {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 .single-post .share {
@@ -1115,13 +1141,13 @@ footer .footer-wrap .newsletter #subscribe button {
   .job-offers .offer-wrapper {
     margin-bottom: 100px;
   }
-  .job-offers .offer-wrapper .offert .offer-description {
+  .job-offers .offer-wrapper .offer .offer-description {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 30px;
   }
-  .job-offers .offer-wrapper .offert .offer-description .company-logo {
+  .job-offers .offer-wrapper .offer .offer-description .company-logo {
     line-height: 50px;
     min-width: 100px;
     max-width: 100px;
