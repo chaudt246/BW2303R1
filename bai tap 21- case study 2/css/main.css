@@ -103,8 +103,15 @@ h1 {
 
 .job-search-btn {
   background-color: #00b14f;
-  color: white;
-  margin: 0;
+  color: white;  
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.input-group .btn{
+  position: relative;
+  z-index: 2;
+  display: inline-block;
 }
 
 .job-search-btn:hover {
@@ -222,17 +229,18 @@ ul.list-in-text li:before {
   background-position: center;
   background-size: cover;
   position: relative;
-  padding: 120px 0px 50px;
+  padding: 0px;
 }
 
 .intro .intro-text .check-out {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .intro .intro-text .form {
   background-color: white;
-  padding: 0px;
-  border-radius: 12px;
+  padding-left: 16px;
+  padding-right: 0px !important;
+  border-radius: 0.3rem;
 }
 
 .intro .intro-text .form input, .intro .intro-text .form select {
@@ -243,7 +251,7 @@ ul.list-in-text li:before {
 }
 
 .intro .intro-text .form .location {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .intro .intro-text .form .location label {
@@ -280,14 +288,6 @@ ul.list-in-text li:before {
 .intro .intro-text .follow img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-}
-
-.intro .intro-img {
-  margin-top: 30px;
-}
-
-.intro .intro-img img {
-  width: 100%;
 }
 
 .search-by {
@@ -861,30 +861,10 @@ footer .footer-wrap .newsletter #subscribe button {
     font-size: 3em;
   }
   .intro {
-    width: 100vw;
-    overflow: hidden;
-    height: 100vh;
-  }
-  .intro .intro-text {
-    position: absolute;
-    top: 100%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    z-index: 1;
-  }
-  .intro .intro-img {
     width: 100%;
-    right: 0;
-    position: absolute;
-    bottom: 25%;
-    right: -33%;
-    z-index: 0;
+    overflow: hidden;
+    height: 100%;
   }
-
-  .intro .intro-img img{
-    border-radius: 50%;    
-  }
-  
   .search-by h1 {
     display: inline-block;
     margin-right: 50px;
@@ -967,13 +947,6 @@ footer .footer-wrap .newsletter #subscribe button {
   h1 {
     font-size: 4em;
   }
-  .intro .intro-text {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    z-index: 1;
-  }
   .intro .intro-text .form {
     padding: 15px 20px 15px 40px;
   }
@@ -981,11 +954,14 @@ footer .footer-wrap .newsletter #subscribe button {
     display: inline-block;
     margin-top: 0 !important;
   }
-  .intro .intro-text .form .job-search {
+  .intro .intro-text .form {
     margin-right: 30px !important;
   }
+  .job-search-btn {
+    margin: 0px !important;
+    display: block;
+  }
   .intro .intro-text .form .location {
-    position: relative;
     padding-left: 30px;
   }
   .intro .intro-text .form .location .search {
@@ -993,24 +969,12 @@ footer .footer-wrap .newsletter #subscribe button {
     padding: 10px 25px !important;
     border-radius: 10px;
   }
-  .intro .intro-text .form .location::before {
-    content: '';
-    position: absolute;
-    left: -5px;
-    top: 70%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: 2px;
-    height: 12px;
-    background-color: #4b4b4b;
+  .intro-img img {
+    width: 60vh;
+    height: auto;
   }
-  .intro .intro-img {
-    position: absolute;
-    bottom: 25%;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-    right: -200px;
-    width: 60%;
+  .intro-img-small{
+    margin: 10px 0px;
   }
   .search-by .carousel .carousel-item .card-item {
     padding: 50px 20px 30px 20px;
@@ -1109,16 +1073,6 @@ footer .footer-wrap .newsletter #subscribe button {
 }
 
 @media (min-width: 1200px) {
-  .intro {
-    height: 90vh;
-    overflow: visible;
-  }
-  .intro .intro-img {
-    position: absolute;
-    bottom: 50%;
-    right: 0px;
-    width: 55%;
-  }
   .search-by .carousel .carousel-item .card-item {
     padding: 50px 20px 30px 20px;
     width: 200px;
@@ -1159,17 +1113,11 @@ footer .footer-wrap .newsletter #subscribe button {
     width: 20%;
   }
 }
-
 @media (min-width: 1400px) {
   .intro {
-    height: 95vh;
+    width: 100vw;
     overflow: visible;
-  }
-  .intro .intro-img {
-    position: absolute;
-    bottom: 45%;
-    right: 100px;
-    width: 50%;
+    height: 70vh;
   }
   .search-by .carousel .carousel-item .card-item {
     padding: 50px 20px 30px 20px;
@@ -1192,11 +1140,5 @@ footer .footer-wrap .newsletter #subscribe button {
   .intro {
     height: 100vh;
     overflow: visible;
-  }
-  .intro .intro-img {
-    position: absolute;
-    bottom: 40%;
-    right: 200px;
-    width: 45%;
   }
 }

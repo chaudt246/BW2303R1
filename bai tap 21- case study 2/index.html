@@ -7,7 +7,10 @@
     <title>TopCV website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
@@ -34,7 +37,7 @@
       <div class="container">
         <a class="navbar-brand" href="index.html"
           ><img
-            claass="w-100"
+            class="w-100"
             src="img/icon/topCV-company-logo.png"
             alt="Company logo"
         /></a>
@@ -79,29 +82,58 @@
       <!-- Intro -->
       <div class="intro">
         <div class="container">
-          <div class="intro-text">
-            <h2>Find a dream job<br /><span class="green blink_me h1 fw-bold">with TopCV</span></h2>
-            <div class="check-out">
-              <div class="form ps-3 pe-3">
-                <div class="input-group job-search d-none d-md-flex">
-                  <span><i class="job-search-icon bi bi-search fa-2x mr-0 pr-0"></i></span>
-                  <input type="text" class="form-control" placeholder="Enter your dream job">
-                  <button class="btn job-search-btn btn-lg rounded-3" type="button">
+          <div class="row py-5">
+            <div class="intro-text col-md-5 align-self-start mt-5 me-5 pt-5">
+              <h2>
+                Find a dream job with<span
+                  class="green blink_me h1 fw-bolder mt-3"
+                >
+                  <span class="text-black">Top</span>CV</span
+                >
+              </h2>
+              <div class="check-out">
+                <div class="input-group job-search w-75">
+                  <input
+                    type="search"
+                    class="form-control rounded"
+                    placeholder="Input job here"
+                    aria-label="Search"
+                    aria-describedby="search-addon"
+                  />
+                  <button type="button" class="btn job-search-btn w-auto">
                     Search
                   </button>
                 </div>
-              </div>
-              <div class="follow">
-                <span>Follow Us</span>
-                <a href=""><i class="fa fa-facebook-square fa-2x"></i></a>
-                <a href=""><i class="fa fa-twitter-square fa-2x"></i></a>
-                <a href=""><i class="fa fa-linkedin-square fa-2x"></i></a>
-                <a href=""><i class="fa fa-instagram fa-2x"></i></a>
+
+                <div class="follow">
+                  <span>Follow Us</span>
+                  <a href=""><i class="fa fa-facebook-square fa-2x"></i></a>
+                  <a href=""><i class="fa fa-twitter-square fa-2x"></i></a>
+                  <a href=""><i class="fa fa-linkedin-square fa-2x"></i></a>
+                  <a href=""><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="intro-img">
-            <img src="img/intro.png" alt="Dream job" />
+            <div class="intro-img col-md-5">
+              <div
+                class="intro-img-small d-flex d-sm-none justify-content-center"
+              >
+                <img
+                  src="img/intro.png"
+                  alt="Dream job"
+                  class="rounded-circle mt-5 mb-5 img-fluid"
+                />
+              </div>
+              <div
+                class="intro-img-large d-none d-sm-flex justify-content-end mt-5"
+              >
+                <img
+                  src="img/intro.png"
+                  alt="Dream job"
+                  class="rounded-circle mt-5 img-fluid"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
