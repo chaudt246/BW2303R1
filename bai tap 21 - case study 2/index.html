@@ -5,101 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TopCV website</title>
-    <link rel="stylesheet" type="text/css" href="./assets/bootstrap/bootstrap-4.5.3-dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./css/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./assets/fontawesome/fontawesome-free-5.12.1-web/fontawesome-free-5.12.1-web/css/fontawesome.min.css"/>
-    <link rel="stylesheet" href="./assets/fontawesome/fontawesome-free-5.12.1-web/fontawesome-free-5.12.1-web/css/all.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/bootstrap/bootstrap-4.5.3-dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome/fontawesome-free-5.12.1-web/fontawesome-free-5.12.1-web/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome/fontawesome-free-5.12.1-web/fontawesome-free-5.12.1-web/css/all.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-xl fixed-top">
-      <div class="container">
-        <a class="navbar-brand ml-3" href="index.html"
-          ><img
-            claass="w-100"
-            src="img/icon/topCV-company-logo.png"
-            alt="Company logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-card-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-card-item">
-              <a class="nav-link" href="aboutus.html">About</a>
-            </li>
-            <li class="nav-card-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-card-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-          </ul>
-          <ul class="right navbar-nav ms-auto">
-            <li class="nav-card-item-right">
-              <a class="nav-link" href="#">Sign in</a>
-            </li>
-            <li class="nav-card-item-right create-account">
-              <a class="nav-link" href="#">Create account</a>
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-xl fixed-top">
+        <div class="container-fluid px-5">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              claass="w-100"
+              src="img/icon/topCV-company-logo.png"
+              alt="Company logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-around"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-card-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-card-item">
+                <a class="nav-link" href="aboutus.html">About</a>
+              </li>
+              <li class="nav-card-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-card-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+            </ul>
+            <ul class="right navbar-nav ms-auto">
+              <li class="nav-card-item-right">
+                <a class="nav-link" href="#">Sign in</a>
+              </li>
+              <li class="nav-card-item-right create-account">
+                <a class="nav-link" href="#">Sign up</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
+    <!-- Main -->
     <main>
       <!-- Intro -->
       <div class="intro">
-        <div class="container">
-          <div class="intro-text">
-            <h2>Find a dream job<br /><span class="green blink_me h1 fw-bold">with TopCV</span></h2>
-            <div class="check-out">
-              <div class="form ps-3 pe-3">
-                <div class="input-group job-search d-none d-md-flex">
-                  <span><i class="job-search-icon bi bi-search fa-2x mr-0 pr-0"></i></span>
-                  <input type="text" class="form-control" placeholder="Enter your dream job">
-                  <button class="btn job-search-btn btn-lg rounded-3" type="button">
+        <div class="container-fluid px-5">
+          <div class="row">
+            <div class="intro-text col-auto align-self-center">
+              <h2>
+                Find jobs<br />
+                <span class="green blink_me h1 fw-bolder text-black">
+                  with TopCV</span
+                >
+              </h2>
+              <div class="check-out">
+                <div class="input-group job-search w-auto">
+                  <input
+                    type="search"
+                    class="form-control rounded"
+                    placeholder="E.g: Developer"
+                    aria-label="Search"
+                    aria-describedby="search-addon"
+                  />
+                  <button type="button" class="btn job-search-btn w-auto">
                     Search
                   </button>
                 </div>
-              </div>
-              <div class="follow">
-                <span>Follow Us</span>
-                <a href=""><i class="fa-facebook-square fa-2x"></i></a>
-                <a href=""><i class="fa fa-twitter-square fa-2x"></i></a>
-                <a href=""><i class="fa fa-linkedin-square fa-2x"></i></a>
-                <a href=""><i class="fa fa-instagram fa-2x"></i></a>
+
+                <div class="follow">
+                  <span>Follow Us</span>
+                  <a href=""
+                    ><i class="bi bi-facebook fa-1x border-secondary ml-1"></i
+                  ></a>
+                  <a href=""
+                    ><i class="bi bi-twitter fa-1x border-secondary ml-1"></i
+                  ></a>
+                  <a href=""
+                    ><i class="bi bi-linkedin fa-1x border-secondary ml-1"></i
+                  ></a>
+                  <a href=""
+                    ><i class="bi bi-instagram fa-1x border-secondary"></i
+                  ></a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="intro-img">
-            <img src="img/intro.png" alt="Dream job" />
+            <div class="intro-img col-auto">
+              <div class="intro-img-large d-none d-lg-flex">
+                <img
+                  src="img/intro.png"
+                  alt="Dream job"
+                  class="rounded-circle"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!--Search by category-->
-      <div class="container">
+      <div class="container-fluid mt-5 px-5">
         <div class="search-by">
           <h2>Search by <span class="green">Job type</span></h2>
           <a href=""
             >All Job types
-            <img
-              style="width: 20px; margin-left: 20px"
-              src="/img/icon/arrow-right-icon.svg"
-              alt=""
-          /></a>
+            <i class="bi bi-arrow-right-square-fill fa-1x green"></i
+          ></a>
 
           <!--Start carousel-->
           <div
@@ -113,14 +155,14 @@
                 <div class="card-item">
                   <div class="photo d-flex justify-content-center">
                     <img
-                      class="main-state"
+                      class="unhover"
                       src="img/icon/business-development.svg"
-                      alt=""
+                      alt="Unhover icon"
                     />
                     <img
                       class="hover"
                       src="img/icon/business-development-hover.svg"
-                      alt=""
+                      alt="Hover icon"
                     />
                   </div>
                   <p>
@@ -131,11 +173,15 @@
 
                 <div class="card-item">
                   <div class="photo d-flex justify-content-center">
-                    <img class="main-state" src="img/icon/graphic.svg" alt="" />
+                    <img
+                      class="unhover"
+                      src="img/icon/graphic.svg"
+                      alt="Unhover icon"
+                    />
                     <img
                       class="hover"
                       src="img/icon/graphic-hover.svg"
-                      alt=""
+                      alt="Hover icon"
                     />
                   </div>
                   <p>
@@ -146,8 +192,16 @@
 
                 <div class="card-item">
                   <div class="photo d-flex justify-content-center">
-                    <img class="main-state" src="img/icon/pm.svg" alt="" />
-                    <img class="hover" src="img/icon/pm-hover.svg" alt="" />
+                    <img
+                      class="unhover"
+                      src="img/icon/pm.svg"
+                      alt="Unhover icon"
+                    />
+                    <img
+                      class="hover"
+                      src="img/icon/pm-hover.svg"
+                      alt="Hover icon"
+                    />
                   </div>
                   <p>
                     Accounting<br />
@@ -157,8 +211,16 @@
 
                 <div class="card-item">
                   <div class="photo d-flex justify-content-center">
-                    <img class="main-state" src="img/icon/pm.svg" alt="" />
-                    <img class="hover" src="img/icon/pm-hover.svg" alt="" />
+                    <img
+                      class="unhover"
+                      src="img/icon/pm.svg"
+                      alt="Unhover icon"
+                    />
+                    <img
+                      class="hover"
+                      src="img/icon/pm-hover.svg"
+                      alt="Hover icon"
+                    />
                   </div>
                   <p>
                     Transport<br />
@@ -171,14 +233,14 @@
                 <div class="card-item">
                   <div class="photo d-flex justify-content-center">
                     <img
-                      class="main-state"
+                      class="unhover"
                       src="img/icon/business-development.svg"
-                      alt=""
+                      alt="Unhover icon"
                     />
                     <img
                       class="hover"
                       src="img/icon/business-development-hover.svg"
-                      alt=""
+                      alt="Hover icon"
                     />
                   </div>
                   <p>
@@ -190,14 +252,14 @@
                 <div class="card-item">
                   <div class="photo d-flex justify-content-center">
                     <img
-                      class="main-state"
+                      class="unhover"
                       src="img/icon/business-development.svg"
-                      alt=""
+                      alt="Unhover icon"
                     />
                     <img
                       class="hover"
                       src="img/icon/business-development-hover.svg"
-                      alt=""
+                      alt="Hover icon"
                     />
                   </div>
                   <p>
@@ -209,14 +271,14 @@
                 <div class="card-item">
                   <div class="photo d-flex justify-content-center">
                     <img
-                      class="main-state"
+                      class="unhover"
                       src="img/icon/business-development.svg"
-                      alt=""
+                      alt="Unhover icon"
                     />
                     <img
                       class="hover"
                       src="img/icon/business-development-hover.svg"
-                      alt=""
+                      alt="Hover icon"
                     />
                   </div>
                   <p>
@@ -228,14 +290,14 @@
                 <div class="card-item">
                   <div class="photo d-flex justify-content-center">
                     <img
-                      class="main-state"
+                      class="unhover"
                       src="img/icon/business-development.svg"
-                      alt=""
+                      alt="Unhover icon"
                     />
                     <img
                       class="hover"
                       src="img/icon/business-development-hover.svg"
-                      alt=""
+                      alt="Hover icon"
                     />
                   </div>
                   <p>
@@ -251,14 +313,14 @@
                 role="button"
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev"
-                ><img src="img/icon/prew-arrow.svg" alt=""
+                ><img src="img/icon/prew-arrow.svg" alt="Previous icon"
               /></a>
               <a
                 class="nav-item"
                 role="button"
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="next"
-                ><img src="img/icon/next-arrow.svg" alt=""
+                ><img src="img/icon/next-arrow.svg" alt="Next icon"
               /></a>
             </div>
           </div>
@@ -268,12 +330,8 @@
         <div class="job-offers">
           <h2>Job <span class="green">offers</span></h2>
           <a href=""
-            >All offers
-            <img
-              style="width: 20px; margin-left: 10px"
-              src="/img/icon/arrow-right-icon.svg"
-              alt=""
-          /></a>
+            >All offers <i class="bi bi-arrow-right-square-fill fa-1x green"></i
+          ></a>
           <div class="row pt-5 justify-content-center">
             <div class="image d-none d-lg-flex col-lg-4">
               <img src="img/job-offers.png" alt="Job offer" />
@@ -283,7 +341,7 @@
                 <div class="offer">
                   <div>
                     <div class="offer-description">
-                      <div class="company-logo">
+                      <div class="company-logo d-none d-lg-block">
                         <img
                           src="img/icon/ghtk-icon.webp"
                           alt="Company icon 1"
@@ -307,13 +365,13 @@
                     </div>
                   </div>
                 </div>
-                <a href="" class="main-btn">See details</a>
+                <a href="" class="main-btn">More</a>
               </div>
               <div class="offer-wrapper">
                 <div class="offer">
                   <div>
                     <div class="offer-description">
-                      <div class="company-logo">
+                      <div class="company-logo d-none d-lg-block">
                         <img
                           src="img/icon/masan-icon.webp"
                           alt="Company icon 2"
@@ -329,7 +387,7 @@
                     </div>
                     <div class="offer-meta">
                       <p class="location">
-                        Location: <span class="city">Da Nang</span>
+                        Location: <span class="city">Hanoi</span>
                       </p>
                       <p class="offer-counter">
                         Jobs: <span class="green"><strong>5</strong></span>
@@ -337,7 +395,7 @@
                     </div>
                   </div>
                 </div>
-                <a href="" class="main-btn">See details</a>
+                <a href="" class="main-btn">More</a>
               </div>
             </div>
             <div class="col-md-4">
@@ -345,14 +403,14 @@
                 <div class="offer">
                   <div>
                     <div class="offer-description">
-                      <div class="company-logo">
+                      <div class="company-logo d-none d-lg-block">
                         <img
                           src="img/icon/tech-icon.webp"
                           alt="Company icon 3"
                         />
                       </div>
                       <div class="description">
-                        <p class="company-name">TechcomBank</p>
+                        <p class="company-name">TcBank</p>
                         <p class="description">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit.
@@ -361,7 +419,7 @@
                     </div>
                     <div class="offer-meta">
                       <p class="location">
-                        Location: <span class="city">Ho Chi Minh</span>
+                        Location: <span class="city">Hanoi</span>
                       </p>
                       <p class="offer-counter">
                         Jobs: <span class="green"><strong>2</strong></span>
@@ -369,13 +427,13 @@
                     </div>
                   </div>
                 </div>
-                <a href="" class="main-btn">See details</a>
+                <a href="" class="main-btn">More</a>
               </div>
               <div class="offer-wrapper">
                 <div class="offer">
                   <div>
                     <div class="offer-description">
-                      <div class="company-logo">
+                      <div class="company-logo d-none d-lg-block">
                         <img
                           src="img/icon/kiot-icon.webp"
                           alt="Company icon 4"
@@ -391,7 +449,7 @@
                     </div>
                     <div class="offer-meta">
                       <p class="location">
-                        Location: <span class="city">Hai Phong</span>
+                        Location: <span class="city">Hanoi</span>
                       </p>
                       <p class="offer-counter">
                         Jobs: <span class="green"><strong>8</strong></span>
@@ -399,7 +457,7 @@
                     </div>
                   </div>
                 </div>
-                <a href="" class="main-btn">See details</a>
+                <a href="" class="main-btn">More</a>
               </div>
             </div>
           </div>
@@ -410,22 +468,25 @@
           <h2>Top <span class="green">outstanding</span> services</h2>
           <div class="service-items">
             <div class="item">
-              <img src="img/icon/applications.svg" alt="" />
+              <img src="img/icon/applications.svg" alt="Recruitment icon" />
               <span class="counter">540,000+</span>
               <span>Reputable Recruiters</span>
             </div>
             <div class="item">
-              <img src="img/icon/customers.svg" alt="" />
+              <img src="img/icon/customers.svg" alt="Enterprise icon" />
               <span class="counter">200,000+</span>
               <span>Leading enterprises</span>
             </div>
             <div class="item">
-              <img src="img/icon/cv-icon.svg" alt="" />
+              <img src="img/icon/cv-icon.svg" alt="Job icon" />
               <span class="counter">2,000,000+</span>
               <span>Connected jobs</span>
             </div>
             <div class="item">
-              <img src="img/icon/projects.svg" alt="" />
+              <img
+                src="img/icon/projects.svg"
+                alt="App download quantity icon"
+              />
               <span class="counter">1,200,000+</span>
               <span>App downloads</span>
             </div>
@@ -445,12 +506,7 @@
               </p>
             </div>
             <div class="col-md-7 news-form">
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                id=""
-              />
+              <input type="email" name="email" placeholder="Enter your email" />
               <button type="submit">Send</button>
             </div>
           </div>
@@ -468,7 +524,7 @@
     </main>
     <!-- Footer -->
     <footer>
-      <div class="container text-center text-md-start">
+      <div class="container-fluid text-center text-md-start px-5">
         <div class="footer-wrap">
           <div class="about">
             <img src="img/icon/topCV-company-logo.png" alt="Company logo" />
@@ -537,6 +593,9 @@
     </footer>
 
     <script src="js/nav-bg.js"></script>
-    <script type="text/javascript" src="./assets/bootstrap/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+    <script
+      type="text/javascript"
+      src="./assets/bootstrap/bootstrap-4.5.3-dist/js/bootstrap.js"
+    ></script>
   </body>
 </html>
